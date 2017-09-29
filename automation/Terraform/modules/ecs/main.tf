@@ -4,7 +4,6 @@
   }
   
   resource "aws_instance" "ecs" {
-    name          = "ecs-app"
     ami           = "${var.ecs_ami}"
     subnet_id     = "${var.subnet_id}"
     security_groups = ["${var.security_group_id}"]
