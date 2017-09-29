@@ -9,4 +9,4 @@ COPY builds.tar .
 RUN apt-get install -y tar
 RUN tar -xvf builds.tar
 RUN cd ./publish
-RUN dotnet Webapplication1.dll --server.urls http://0.0.0.0:5000
+CMD dotnet Webapplication1.dll --server.urls http://0.0.0.0:5000
