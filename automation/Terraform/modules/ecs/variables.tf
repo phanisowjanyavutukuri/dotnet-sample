@@ -8,6 +8,15 @@
   variable "security_group_id" {
     default = "sg-5ec56439"
   }
+   variable "key_name" {
+    default = "megh_key"
+  }
+  
+  variable "key_name" {
+    default = "megh_key"
+  }
+
+
   variable "instance_type" {
     default = "t2.micro"
   }
