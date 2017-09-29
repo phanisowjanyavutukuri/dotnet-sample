@@ -2,7 +2,16 @@
   module "ecr" {
    source = "../ecr"
   }
-
+  
+    resource "aws_instance" "ecs" {
+    name          = "ecs-app"
+    ami           = "${var.ecs_ami}"
+    subnet_id     = "${var.subnet_id}"
+    security_groups = ["${var.security_group_id}"]
+    key_name      = "${var.key_name}"
+    instance_type = "${var.instance_type}" 
+  }
+  
   resource "aws_ecs_cluster" "cluster" {
     name = "megh-cluster"
   } 
