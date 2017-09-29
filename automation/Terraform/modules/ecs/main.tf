@@ -3,7 +3,7 @@
    source = "../ecr"
   }
 
-    resource "aws_ecs_cluster" "cluster" {
+  resource "aws_ecs_cluster" "cluster" {
     name = "megh-cluster"
   } 
  
