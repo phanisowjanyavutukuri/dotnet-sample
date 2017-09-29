@@ -1,0 +1,11 @@
+FROM microsoft/dotnet:1.1.0-sdk-projectjson
+
+RUN apt-get install python-software-properties
+RUN curl -sL https://deb.nodesource.com/setup_6.x | bash -
+RUN apt-get install nodejs
+RUN npm install -g bower
+COPY /home/ubuntu/publish.zip .
+RUN apt-get install unzip
+RUN unzip publish.zip
+RUN cd publish/ 
+RUN dotnet Webapplication1.dll --server.urls http://0.0.0.0:5001
