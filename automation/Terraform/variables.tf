@@ -1,6 +1,4 @@
-  variable "aws_region" { 
-    default = "us-west-2"
-  }
+  variable "aws_region" {}
   
   variable "credentials_path" {
     default = "/home/ubuntu/.aws/credentials"
