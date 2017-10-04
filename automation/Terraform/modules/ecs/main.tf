@@ -10,13 +10,13 @@
  
   resource "aws_ecs_task_definition" "test" {
     family = "test"
-    container_definitions = "${file("task-definitions/config.json")}"
+    container_definitions = "${file("task-definitions/test.json")}"
   } 
  
   resource "aws_ecs_service" "test_service" {
     name            = "megh-service"
     cluster         = "${aws_ecs_cluster.cluster.id}"
-    task_definition = "${aws_ecs_task_definition.test.arn}"
+    task_definition = "${aws_ecs_task_definition.config.arn}"
     desired_count   = 1
   }
  
