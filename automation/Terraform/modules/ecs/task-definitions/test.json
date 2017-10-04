@@ -1,7 +1,7 @@
   [
     {
         "name": "test",
-        "image": "/test",
+        "image": "megh-ecr",
         "cpu": 100,
         "memory": 512,
         "links": [],

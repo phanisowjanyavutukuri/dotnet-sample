@@ -1,13 +1,13 @@
   [
     {
         "name": "test",
-        "image": "megh-ecr",
+        "image": "/test",
         "cpu": 100,
         "memory": 512,
         "links": [],
         "portMappings": [
             {
-                "containerPort": 5000,
+                "containerPort": 8080,
                 "hostPort": 8080,
                 "protocol": "tcp"
             }
