@@ -8,8 +8,8 @@
     name = "megh-cluster"
   } 
  
-  resource "aws_ecs_task_definition" "test" {
-    family = "test"
+  resource "aws_ecs_task_definition" "config" {
+    family = "config"
     container_definitions = "${file("task-definitions/test.json")}"
   } 
  
