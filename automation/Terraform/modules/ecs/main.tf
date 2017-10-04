@@ -10,7 +10,7 @@
  
   resource "aws_ecs_task_definition" "test" {
     family = "test"
-    container_definitions = "${file("task-definitions/test.json")}"
+    container_definitions = "${file("task-definitions/config.json")}"
   } 
  
   resource "aws_ecs_service" "test_service" {
