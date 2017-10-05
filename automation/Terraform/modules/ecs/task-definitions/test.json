@@ -1,6 +1,6 @@
   [
     {
-        "name": "test",
+        "name": "task_def",
         "image": "megh-ecr",
         "cpu": 100,
         "memory": 512,
