@@ -1,6 +1,6 @@
   
   variable "key_name" {
-    default = "meghana"
+    default = "megh_key"
   }
 
   variable "instance_type" {
@@ -8,7 +8,6 @@
   }
 
   variable "ecs_aws_ami" {
-    default = "ami-34032e51"
+    default = "ami-1d668865"
   }
 
-  
